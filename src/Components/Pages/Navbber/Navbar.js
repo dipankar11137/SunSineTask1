@@ -39,7 +39,7 @@ function CollapsibleExample() {
           </Nav>
           <Nav>
             <li className="ps-3">
-              <Link className="nav-style" to="/header">
+              <Link className="nav-style" to="/login">
                 Login
               </Link>
             </li>
