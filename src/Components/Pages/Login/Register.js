@@ -7,6 +7,7 @@ import {
 import auth from "../../../firebase.init";
 import "./Register.css";
 import SocialLogin from "./SocialLogin";
+import Loading from "../Home/Loading";
 
 const Register = () => {
   const [agree, setAgree] = useState(false);
@@ -15,6 +16,9 @@ const Register = () => {
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth, { SendEmailVerification: true });
   const [updateProfile] = useUpdateProfile(auth);
+  if (loading) {
+    return <Loading></Loading>;
+  }
 
   const handleRegister = async (event) => {
     event.preventDefault();
