@@ -6,6 +6,7 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import "./Register.css";
+import SocialLogin from "./SocialLogin";
 
 const Register = () => {
   const [agree, setAgree] = useState(false);
@@ -83,6 +84,7 @@ const Register = () => {
           </span>
         </p>
       </div>
+      <SocialLogin></SocialLogin>
     </div>
   );
 };
