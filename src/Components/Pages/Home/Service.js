@@ -1,5 +1,6 @@
 import { Button } from "bootstrap";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Service = ({ service }) => {
   const { img, name, price, serviceManName, description } = service;
@@ -9,7 +10,7 @@ const Service = ({ service }) => {
         <img src={img} alt="" />
         <div class="card-body">
           <h3 class="card-title text-dark">{name}</h3>
-          <h4 className="text-dark">Service Price : {price}</h4>
+          <h4 className="text-dark">Service Price : $ {price} </h4>
           <h5 className="text-dark">Service Man Name : {serviceManName}</h5>
           <p class=" text-dark">{description}</p>
         </div>
@@ -18,9 +19,11 @@ const Service = ({ service }) => {
             Details
           </button>
           <div>
-            <button type="button" class="btn btn-warning shadow-lg px-4">
-              Booking Now
-            </button>
+            <Link to="/booking">
+              <button type="button" class="btn btn-warning shadow-lg px-4">
+                Booking Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>
