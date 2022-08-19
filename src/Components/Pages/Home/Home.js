@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../Footer/Footer";
 import Banner from "./Banner";
+import Fidbacks from "./Fidbacks";
 import Header from "./Header";
 import OurExperts from "./OurExperts";
 import Services from "./Services";
@@ -21,6 +22,7 @@ const Home = () => {
       </div>
       <Services />
       <OurExperts />
+      <Fidbacks />
       <hr />
       <Footer />
     </div>

@@ -1,7 +1,6 @@
 import React from "react";
 
 const OutExpert = ({ expert }) => {
-  console.log(expert);
   return (
     <div className="col p-2">
       <div className="card p-1 bg-info">
