@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../Footer/Footer";
 import Banner from "./Banner";
 import Header from "./Header";
+import OurExperts from "./OurExperts";
 import Services from "./Services";
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
         </div>
       </div>
       <Services />
+      <OurExperts />
       <hr />
       <Footer />
     </div>
