@@ -6,7 +6,7 @@ import Header from "./Components/Pages/Home/Header";
 
 function App() {
   return (
-    <div>
+    <div className="background-color">
       <Navbar />
 
       <Routes>
